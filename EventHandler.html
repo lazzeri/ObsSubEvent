@@ -1,0 +1,65 @@
+<html>
+	<head>	
+		<script src="https://js.pusher.com/5.0/pusher.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+
+		@-webkit-keyframes moveUpClass
+		{
+			0% {opacity: 0.0;}
+    		20% {opacity: 1;}
+    		50% {opacity: 1;}
+    		70% {opacity: 0.8;}
+    		80% {opacity: 0.6;}
+    		90% {opacity: 0.4;}
+    		100% {opacity: 0.0;}
+		}
+
+
+		div
+		{
+			animation-duration: 25s;
+  			animation-name: moveUpClass;
+  			height:314px;
+  			width:480px;
+		}
+
+
+		#Container	
+		{
+			animation-name: none;
+			width: 1280px;
+			height: 720px;
+			position: relative;
+		}
+
+		.Text   
+		{
+			
+			font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+			font-size: 17px;
+			letter-spacing: 0.6px;
+			word-spacing: -5px;
+			color: #FF0000;
+			font-weight: 700;
+			text-decoration: none;
+			font-style: normal;
+			font-variant: normal;
+			text-transform: none;
+			left:20px;
+  			animation-duration: 10s;
+  			animation-name: moveUpClass;
+  			height: 100px;
+  			width: 100px;
+		}
+
+
+	</style>
+	</head>
+	<body onload="RunCode();"
+		<div id="Container"> </div>
+		<button onclick="AddTestSub('MysteryMusicalGal');">TestSub</button>
+		<button onclick="AddTestSub('plucked.daisy');">Add FanEvent</button>
+</body>
+	
